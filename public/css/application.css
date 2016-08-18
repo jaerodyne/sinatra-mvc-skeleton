@@ -10,7 +10,7 @@ h6 {font-size: 1.1em;}
 p, pre, blockquote, table, ul, ol, dl {margin-top: .5em; margin-bottom: .5em;}
 ul ul, ul ol, ol ol, ol ul {margin-top: 0.5em; margin-bottom: 0.5em;}
 li {margin: 0.3em auto;}
-ul {margin-left: .5em; padding-left: 0.5em;}
+ul {margin-left: .5em; padding-left: 0.5em; display: block;}
 dt {font-weight: bold;}
 img {border: none;}
 pre {border-left: 1px solid #ccc; margin-left: 0em; padding-left: 0.5em;}
@@ -65,3 +65,50 @@ code {
     margin-left: -1em;
     overflow: auto;
 }
+
+#login {
+    display: block;
+    padding: 5px 0 0 25px;
+}
+/*-----Home page--------*/
+header {
+    background-color: #E8F2F5;
+    height: 50px;
+}
+
+header h1 {
+    padding: 20px 5px 5px;
+    margin: 5px 0px 5px 20px;
+}
+
+nav {
+    width: 100%;
+    display: inline-block;
+}
+
+nav ul {
+    margin: auto;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px;
+    margin: 5px 11px;
+    float: left;
+    list-style: none;
+}
+
+nav li a{
+    margin: auto;
+}
+/* -----end--------*/
+
+/*-----New user-----*/
+h4 {
+    margin: 15px 11px 5px 22px;
+}
+
+form {
+    padding: 5px 0 0 25px;
+}
+
