@@ -7,11 +7,11 @@ class User < ActiveRecord::Base
   validates :username, :email, presence: true
 
   def password
-    @password ||= Password.new(hash_password)
+    @password ||=  Password.new(hash_password)
   end
 
   def password=(new_password)
-    @password = Password.create(new_password)
+    @password =  Password.create(new_password)
     self.hash_password = @password
   end
 
