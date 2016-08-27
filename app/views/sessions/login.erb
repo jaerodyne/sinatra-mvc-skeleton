@@ -2,12 +2,8 @@
 	<h1> Welcome to the abyss. </h1>
 	Sign in here, unfortunate one:
 	<br>
-
-	<% if @errors %>
-	  <% @errors.each do |error| %>
-	    <p><%= error %></p>
-	  <% end %>
-	<% end %>
+	
+	<%= erb :"_errors" %>
 
 	<form method='post' action='/login'>
 	  <input type='text' name='user[email]' placeholder="Email"><br>
