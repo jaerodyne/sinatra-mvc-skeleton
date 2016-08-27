@@ -1,16 +1,17 @@
-<div id="login"> 
+<div class="row"> 
 	<h1> Welcome to the abyss. </h1>
 	Sign in here, unfortunate one:
 	<br>
+</div>
 	
 	<%= erb :"_errors" %>
-
-	<form method='post' action='/login'>
-	  <input type='text' name='user[email]' placeholder="Email"><br>
-	  <input type='password' name='user[password]' placeholder="Password"><br>
-	  <input type='submit' value='Log In'>
-	</form>
-
+	<div class="row">
+		<div class="col s3">
+		<form method='post' action='/login'>
+		  <input type='text' name='user[email]' placeholder="Email"><br>
+		  <input type='password' name='user[password]' placeholder="Password"><br>
+		  <input type='submit' value='Log In' class="waves-effect waves-light btn">
+		</form>
+		</div>
+	</div>
 	<p>Not a cynic yet? <a href='/users/new'> Sign up and join the misery. </a></p>
-
-</div>
