@@ -1,16 +1,17 @@
 <header>
   <nav>
-    <ul>
+    <div class="nav-wrapper">
+    <a href="/" class="brand-logo col s1 offset-s3" id="not-xfinity">jillian</a>
+    <ul id="nav-mobile" class="right">
     <li><a href="/">Home</a></li>
       <% if logged_in? %>
-      <li><a href="/users/<%=current_user.id%>"><%= current_user.username%>'s profile</a></li>
-      <li><form action="/logout" method="get">
-        <input type="submit" value="Log out">
-      </form></li>
+      <li><a href="/users/<%=current_user.id%>"><%= current_user.email%>'s profile</a></li>
+      <li><a href="/logout">Logout</a></li>
       <% else %>
-      <li><a href="/login">Log in</a></li>
+      <li><a href="/login">Login</a></li>
       <li><a href="/users/new">Register</a></li>
       <% end %>
     </ul>
+  </div>
   </nav>
 </header>
