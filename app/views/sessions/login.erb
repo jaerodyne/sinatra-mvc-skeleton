@@ -3,7 +3,8 @@
 		<h1> Welcome to the abyss. </h1>
 	</div>
 </div>
-	
+
+<% unless logged_in? %>	
 <%= erb :"_errors" %>
 <div class="row" >
 	<div class="col s3 offset-s4" id="login">
@@ -25,3 +26,4 @@
 		</div>
 	</div>
 </div>
+<% end %>
